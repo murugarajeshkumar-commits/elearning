@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- The 'action' attribute is where the data is sent for processing -->
+        <form action="/login_process" method="POST">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <br>
+            <button type="submit">Login</button>
+            <p>
+                <a href="#">Forgot password?</a> | <a href="#">Sign up</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
